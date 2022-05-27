@@ -1,0 +1,39 @@
+\documentclass[12pt, a4paper, twoside, english] {article}
+\input{package}
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+\input{titleheaderfooter} %head of the title page
+%--------------------------------------------------------
+
+%Titles and Authors
+\title{Night Audit}
+\author{%
+\Large\textsc{After Dark} ~\\[0ex]
+}%%
+%---------------------------------------------------------------
+%Title format and Abstract
+\makeatletter 
+\def\@maketitle{%
+\begin{center}%
+\pgfornament[width=02cm,color = green!30!black]{77}~\\[5ex]%
+{\Huge \@title }~\\[1ex]%
+\pgfornament[width=15cm,color = blue!2!red!1!]{89}~\\[1ex]%
+% {\@author}~\\[-3ex]%
+\end{center}%
+
+\hfill \break}%
+\makeatother%
+%-------------------------------------------------------------
+%-------------------------------------------------------------
+\begin{document}%
+\pagecolor{yellow!1!orange!3!}%
+\maketitle%
+\thispagestyle{fancytitle}%
+\begin{onehalfspacing}%
+\input{Text}%
+
+% \input{PartOne}
+
+\printbibliography
+\end{onehalfspacing}%
+\end{document}%
